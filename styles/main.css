@@ -9,6 +9,10 @@ body {
     padding-right: 15px;
 }
 
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
+
 .header {
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -32,6 +36,10 @@ body {
     display: flex;
     padding-left: 0;
     gap: 46px;
+}
+
+.header-nav a:hover {
+    color: #FFC725;
 }
 
 .header-nav a {
@@ -61,6 +69,7 @@ body {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 
 .button-item {
@@ -95,6 +104,7 @@ body {
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
+    margin-bottom: 140px;
 }
 
 .breadcrumbs {
@@ -103,7 +113,11 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 7px;
+}
+
+.breadcrumbs a:hover {
+    color: #FFC725;
 }
 
 .breadcrumbs a {
@@ -116,7 +130,12 @@ body {
 .breadcrumbs a::before {
     content: '/';
     position: relative;
-    left: -7px;
+    left: -3px;
+    pointer-events: none;
+}
+
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
 }
 
 .breadcrumbs Li:first-child a::before {
@@ -126,14 +145,72 @@ body {
 .title {
     font-weight: 700;
     font-size: 79px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 20px;
 }
 
 .description {
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
+}
+
+.banner-box {
+    background-image: url(../images/burger.jpg);
+    color: #FFFFFF;
+    background-size: cover;
+    padding: 100px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.banner-title {
+    font-weight: 900;
+    font-size: 60px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    padding-left: 100px;
+}
+
+.banner-title span {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #F37335;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 0px;
+    width: 95px;
+    margin-bottom: 8px;
+}
+
+.banner-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FAF9F9;
+    max-width: 353px;
+    padding-bottom: 22px;
+    padding-left: 100px;
+}
+
+.banner-link {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #1E2F40;
+    background-color: #FBB731;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 170px;
+    border-radius: 5px;
+    padding: 20px 10px;
+    line-height: 1.5;
+    margin-left: 100px;
 }
