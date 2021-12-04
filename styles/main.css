@@ -22,6 +22,13 @@
                 padding-bottom: 25px;
             }
             
+            .header-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-basis: 68.5%;
+            }
+            
             .header-logo {
                 display: block;
                 background-image: url(../images/logo.svg);
@@ -206,7 +213,13 @@
                 font-size: 14px;
                 text-transform: uppercase;
                 border-radius: 5px;
-                padding: 20px 27px;
+                padding: 18px 25px;
+                border: 1px solid #FBB731;
+            }
+            
+            .banner-link:hover {
+                background-color: transparent;
+                color: #FBB731;
             }
             
             .menu-header {
@@ -241,7 +254,7 @@
             .menu-grid {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
+                gap: 50px 20px;
                 margin-bottom: 100px;
             }
             
@@ -253,6 +266,7 @@
             }
             
             .menu-grid-cover img {
+                position: absolute;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50% -50%);
@@ -292,11 +306,32 @@
                 height: 38px;
             }
             
-            .footer {
+            .menu-grid-btn:hover {
+                background-color: #F37335;
+            }
+            
+            .menu-grid-icon {
+                background-image: url(../images/korzina.svg);
+                width: 18px;
+                height: 18px;
+                display: block;
+            }
+            
+            .menu-grid-text {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 18px;
+                text-transform: uppercase;
+                display: block;
+                padding: 0;
+            }
+            
+            footer {
                 background: #1E2F40;
                 color: #fff;
                 padding-top: 117px;
                 padding-bottom: 106px;
+                margin-top: 140px;
             }
             
             .footer-box {
@@ -304,28 +339,30 @@
                 justify-content: space-between;
             }
             
-            .logo {
+            .footer-logo {
                 width: 63px;
                 height: 56px;
             }
             
-            .item {
+            .footer-item {
                 flex: 0 0 auto;
             }
             
-            .item h2 {
+            .footer-item h2 {
                 font-size: 20px;
                 font-weight: 800;
+                line-height: 38px;
                 text-transform: uppercase;
-                margin-bottom: 12px;
+                margin-bottom: 19px;
+                margin-top: 0;
             }
             
-            .item ul,
-            .tel ul {
+            .footer-list {
+                padding-left: 0;
                 list-style-type: none;
             }
             
-            .item li {
+            .footer-item li {
                 margin-bottom: 9px;
                 font-family: 'Open Sans', sans-serif;
                 font-size: 15px;
@@ -334,24 +371,38 @@
                 line-height: 24px;
             }
             
-            .item a {
+            .footer-item a {
                 color: #DEDEDE;
                 text-decoration: none;
                 font-weight: 400;
             }
             
-            .item span {
+            .footer-item a:hover {
+                color: #FBB731;
+            }
+            
+            .footer-item span {
                 color: #DEDEDE;
                 display: block;
                 font-weight: 400;
                 margin-bottom: 2px;
             }
             
-            .tel ul {
-                font-size: 20px;
-                color: #FBB731;
+            .footer-list-tel {
+                margin-top: 0;
             }
             
-            .tel li {
+            .footer-list-tel li {
                 margin-bottom: 12px;
+            }
+            
+            .footer-list-tel a {
+                font-size: 20px;
+                font-weight: 900;
+                color: #FBB731;
+                text-decoration: none;
+            }
+            
+            .footer-list-tel a:hover {
+                color: #DEDEDE;
             }
