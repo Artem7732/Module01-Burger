@@ -203,6 +203,7 @@
                 max-width: 353px;
                 margin-bottom: 35px;
                 margin-top: 0;
+                line-height: 24px
             }
             
             .banner-link {
@@ -215,6 +216,7 @@
                 border-radius: 5px;
                 padding: 18px 25px;
                 border: 1px solid #FBB731;
+                font-weight: 700
             }
             
             .banner-link:hover {
@@ -281,7 +283,6 @@
                 text-align: center;
                 color: #1B2A49;
                 margin-top: 20px;
-                margin-bottom: 0px;
             }
             
             .menu-grid-price {
@@ -302,8 +303,7 @@
                 border-radius: 5px;
                 cursor: pointer;
                 gap: 11px;
-                width: 152px;
-                height: 38px;
+                border: none;
             }
             
             .menu-grid-btn:hover {
@@ -324,6 +324,7 @@
                 text-transform: uppercase;
                 display: block;
                 padding: 0;
+                color: #1E2F40;
             }
             
             footer {
