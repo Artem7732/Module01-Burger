@@ -501,12 +501,12 @@
             }
             
             .promo-left {
-                background-image: url(../images/Promo-left.png);
+                background-image: url(../images/promo-left\ .png);
                 padding: 116px 50px;
             }
             
             .promo-right {
-                background-image: url(../images/promo-right.png);
+                background-image: url(../images/promo-right\ .png);
                 padding: 102px 50px;
             }
             
