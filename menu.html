@@ -21,26 +21,25 @@
                 <div class="header-burger">
                     <button class="burger" onclick="openModal()"></button>
                 </div>
-            </div>
-            <div class="header-item">
-                <a href="Index.html" class="header-logo"></a>
-                <nav>
-                    <ul class="header-nav">
-                        <li><a href="Index.html">Главная</a></li>
-                        <li><a href="#" class="active">Меню</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-            </div>
-            </nav>
-            <button type="button" class="button">
+                <div class="header-item">
+                    <a href="Index.html" class="header-logo"></a>
+                    <nav>
+                        <ul class="header-nav">
+                            <li><a href="Index.html">Главная</a></li>
+                            <li><a href="#" class="active">Меню</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <button type="button" class="button">
                     <span class="button-item">
                         <img src="images/shopping-cart.svg" alt="карзина">
                         <span class="button-count">5</span>
                     </span>
                     <span class="button-text">$125</span>
                 </button>
-        </div>
+            </div>
         </div>
     </header>
     <div class="bg">
@@ -253,7 +252,7 @@
         <button class="burger-close" onclick="closeModal()"></button>
     </div>
     <script>
-        //Smooth Scroll
+        // Smooth Scroll
 
         const links = document.querySelectorAll(".banner-link");
 
@@ -270,7 +269,7 @@
             });
         }
 
-        //Button Up
+        // Button Up
 
         window.onscroll = function() {
             scrollFunction()
@@ -297,15 +296,16 @@
             } else {
                 document.getElementById('btnUp').className = 'button-up hidden';
             }
-            // Menu
+        }
 
-            function openModal() {
-                document.getElementById("modal").style.top = "0px";
-            }
+        // Menu
 
-            function closeModal() {
-                document.getElementById("modal").style.top = "-400px";
-            }
+        function openModal() {
+            document.getElementById("modal").style.top = "0px";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.top = "-400px";
         }
     </script>
 </body>
