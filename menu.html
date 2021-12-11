@@ -18,25 +18,29 @@
     <header id="headerTop">
         <div class="container">
             <div class="header">
-                <div class="header-item">
-                    <a href="Index.html" class="header-logo"></a>
-                    <nav>
-                        <ul class="header-nav">
-                            <li><a href="Index.html">Главная</a></li>
-                            <li><a href="#" class="active">Меню</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
+                <div class="header-burger">
+                    <button class="burger" onclick="openModal()"></button>
                 </div>
-                </nav>
-                <button type="button" class="button">
+            </div>
+            <div class="header-item">
+                <a href="Index.html" class="header-logo"></a>
+                <nav>
+                    <ul class="header-nav">
+                        <li><a href="Index.html">Главная</a></li>
+                        <li><a href="#" class="active">Меню</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+            </div>
+            </nav>
+            <button type="button" class="button">
                     <span class="button-item">
                         <img src="images/shopping-cart.svg" alt="карзина">
                         <span class="button-count">5</span>
                     </span>
                     <span class="button-text">$125</span>
                 </button>
-            </div>
+        </div>
         </div>
     </header>
     <div class="bg">
@@ -142,6 +146,11 @@
                         </button>
                     </div>
                 </div>
+            </div>
+            </div>
+        </section>
+        <section class="menu menu-other">
+            <div class="container">
                 <div class="menu-header">
                     <h2 class="menu-title">
                         Дополнительно
@@ -200,6 +209,14 @@
                         <li><a href="#">Методы оплаты</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
+                    <ul class="footer-list footer-list-tel">
+                        <li>
+                            <a href="tel:+79007871313">+ 7 900 787 13-13</a>
+                        </li>
+                        <li>
+                            <a href="tel:+79007001414">+ 7 900 700 14-14</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer-item">
                     <h2>Основная информация</h2>
@@ -226,6 +243,15 @@
         </div>
     </footer>
     <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+    <div id="modal" class="modal">
+        <ul class="header-nav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="main.html" class="active">Меню</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <button class="burger-close" onclick="closeModal()"></button>
+    </div>
     <script>
         //Smooth Scroll
 
@@ -270,6 +296,15 @@
                 document.getElementById('btnUp').className = 'button-up visible';
             } else {
                 document.getElementById('btnUp').className = 'button-up hidden';
+            }
+            // Menu
+
+            function openModal() {
+                document.getElementById("modal").style.top = "0px";
+            }
+
+            function closeModal() {
+                document.getElementById("modal").style.top = "-400px";
             }
         }
     </script>

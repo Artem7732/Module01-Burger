@@ -651,31 +651,6 @@
                             .tel li {
                                 margin-bottom: 12px;
                             }
-                            
-                            .burger {
-                                width: 34px;
-                                height: 23px;
-                                background-color: transparent;
-                                background-image: url(../images/burger-menu.svg);
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                border: none;
-                                cursor: pointer;
-                            }
-                            
-                            .burger-close {
-                                width: 22px;
-                                height: 22px;
-                                background-color: transparent;
-                                background-image: url(../img/burger-close.svg);
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                border: none;
-                                cursor: pointer;
-                                position: absolute;
-                                top: 20px;
-                                right: 20px;
-                            }
                             /* Responsive*/
                             
                             @media (min-width: 1001px) {
