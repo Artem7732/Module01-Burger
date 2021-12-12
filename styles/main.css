@@ -287,17 +287,18 @@
                             .menu-grid-title {
                                 font-weight: 600;
                                 font-size: 30px;
-                                line-height: 38px;
+                                line-height: 127%;
                                 text-align: center;
                                 color: #1B2A49;
-                                margin-top: 20px;
+                                margin: 0;
+                                margin-top: 21px;
                             }
                             
                             .menu-grid-price {
                                 font-size: 20px;
                                 align-items: center;
                                 color: #979797;
-                                margin-top: 5px;
+                                margin-top: 3px;
                                 margin-bottom: 0;
                                 line-height: 28px;
                                 text-align: center;
